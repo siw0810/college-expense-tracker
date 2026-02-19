@@ -1,0 +1,125 @@
+.bg{
+    position: fixed;
+    inset: 0;
+    z-index: -2;
+    background-size: cover;
+    background-position: center center;
+    background-image: url('https://i.pinimg.com/736x/5d/c9/74/5dc974199a95c1a4534215117ccb3b9c.jpg');
+}
+
+.bg::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    backdrop-filter: blur(4px);
+    background: rgba(0,0,0,0.2);
+}
+
+body {
+    color: white;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: rgba(0, 30, 60, 0.85);
+    padding: 25px;
+    border-radius: 12px;
+    width: 450px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.input-section, .budget-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+select, input {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    padding: 8px;
+    background: #012449;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #023c75;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #f1f1f1;
+    color: black;
+    margin-top: 8px;
+    padding: 8px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+li button {
+    background: red;
+    font-size: 12px;
+    padding: 4px 8px;
+}
+
+#budget-details p {
+    margin: 4px 0;
+    font-size: 13px;
+}
+
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.card {
+    background: #023c75;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    flex: 1;
+}
+
+.dashboard {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.card {
+    flex: 1;
+    background: #023c75;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#smart-message {
+    margin: 10px 0;
+    text-align: center;
+    font-weight: bold;
+}
